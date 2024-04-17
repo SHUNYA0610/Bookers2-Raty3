@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root to: "homes#top"
   get 'home/about' => 'homes#about'
   get "/search", to: "searches#search"
+  get 'tagsearches/search', to: 'tagsearches#search'
   
   #patch 'books/:id' => "books#edit", as: "edit"
   resources :books, only: [:create, :index, :show, :destroy, :edit, :update] do

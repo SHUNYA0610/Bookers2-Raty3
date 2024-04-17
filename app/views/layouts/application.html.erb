@@ -13,6 +13,9 @@
   <body>
     <%= render 'layouts/header' %>
     <%= render 'searches/search' %>
+    <% if user_signed_in? %>
+　　<%= render 'tagsearches/tagsearch' %>
+    <% end %>
       <main>
           <p class="notice"><%= notice %></p>
           <%= yield %>
