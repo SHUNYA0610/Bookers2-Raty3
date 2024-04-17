@@ -23,6 +23,9 @@
         </td>
         <td><p>コメント件数：<%= book.book_comments.count %></p>
         </td>
+        <td>
+         <%= l book.created_at %>
+        </td>
       </tr>
     <% end %>
   </tbody>
